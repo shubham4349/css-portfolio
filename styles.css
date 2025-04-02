@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    background-image: url('https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161363.jpg');
+    /* filter: brightness(50%); */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+#hero {
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #00d4ff, #007bff);
+    background-image: url('https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 10px 30px rgba(0, 212, 255, 0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-size: large;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 80px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSection 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 212, 255, 0.4);
+}
+#about{
+    padding-left: 200px;
+    padding-right: 200px
+}
+#kuch-bhi{
+    font-size: larger;
+}
